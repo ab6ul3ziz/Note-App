@@ -197,6 +197,7 @@ header {
 
 .notes-boxes .box.show p {
     white-space: normal;
+    word-wrap: break-word;
 }
 
 .new-note-container {
