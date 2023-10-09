@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="theme" id="theme"><i class="fa-solid fa-sun sun-icon" id="icon"></i></div>
+        Your Notes
+        <span class="new-note" id="new-note">Add</span>
+    </header>
+    <div class="note-container">
+        <div class="notes-boxes" id="notes-boxes">
+            <button type="button" class="close-note-button" id="close-note-button">⇨</button>
+            <div class="overlay" id="overlay"></div>
+        </div>
+        <div id="new-note-container" class="new-note-container">
+            <div class="add-note-container">
+                <span class="tooltip-input" id="tooltip-input">Title Field Can't be Empty</span>
+                <div class="close-btn" id="close-btn">✖</div>
+                <div class="row"> <label for="new-title-note">Title</label>
+                    <input class="new-title-note" type="text" id="new-title-note">
+                </div>
+                <div class="row">
+                    <label for="new-text-note">Note</label>
+                    <textarea class="new-text-note" id="new-text-note" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" id="add-note-button" class="add-note-button">Add</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
